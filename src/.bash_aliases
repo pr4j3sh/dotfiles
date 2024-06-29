@@ -1,0 +1,5 @@
+alias vi="nvim"
+alias ll="ls -l"
+alias la="ls -al"
+alias sour="source ~/.bashrc"
+alias pacmanrm="sudo pacman -Qtdq | sudo pacman -Rns -"
