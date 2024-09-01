@@ -19,6 +19,12 @@ font pango:FiraCode Nerd Font 10
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
 
+# wallpaper
+exec_always feh --bg-scale ~/.config/assets/wallpapers/rage_catppuccin.png
+
+# autolayout
+exec_always --no-startup-id i3-autolayout autolayout
+
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id picom
@@ -35,8 +41,6 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
-# wallpaper
-exec_always feh --bg-scale ~/.config/assets/wallpapers/rage_catppuccin.png
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -228,12 +232,12 @@ set $base #1e1e2e
 set $mantle #181825
 set $crust #11111b
 
-# target                 title  bg      text       indicator  border
-client.focused           $base  $crust  $lavender  $base      $crust
-client.focused_inactive  $base  $base   $lavender  $base      $base
-client.unfocused         $base  $base   $lavender  $base      $base
-client.urgent            $base  $base   $lavender  $base      $base
-client.placeholder       $base  $base   $lavender  $base      $base
+# target                 title  bg        text       indicator  border
+client.focused           $base  $lavender $crust     $base      $lavender
+client.focused_inactive  $base  $base     $lavender  $base      $crust
+client.unfocused         $base  $base     $lavender  $base      $crust
+client.urgent            $base  $base     $lavender  $base      $crust
+client.placeholder       $base  $base     $lavender  $base      $base
 client.background        $base
 
 # bar
