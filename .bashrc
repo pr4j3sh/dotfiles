@@ -17,15 +17,22 @@ fi
 # starship
 eval "$(starship init bash)"
 
+# nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
 
+# pyenv
 eval "$(pyenv init --path)"
 export TMPDIR=$HOME/tmp
 
+# android
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
+# bat
 export BAT_THEME="Catppuccin Mocha"
+
+# cargo
+PATH=$PATH:$HOME/.cargo/bin
