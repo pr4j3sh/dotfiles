@@ -54,9 +54,9 @@ bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 
 ##  Screenshots in files
-bindsym Print exec --no-startup-id maim --format=png "/home/$USER/files/downloads/screenshots/ss-$(date -u +'%Y%m%d-%H%M%SZ').png"
-bindsym $mod+Print exec --no-startup-id maim --format=png --window $(xdotool getactivewindow) "/home/$USER/files/downloads/screenshots/ss-$(date -u +'%Y%m%d-%H%M%SZ')-current.png" 
-bindsym Shift+Print exec --no-startup-id maim --format=png --select "/home/$USER/files/downloads/screenshots/ss-$(date -u +'%Y%m%d-%H%M%SZ')-selected.png"
+bindsym Print exec --no-startup-id maim --format=png "/home/$USER/downloads/screenshots/ss-$(date -u +'%Y%m%d-%H%M%SZ').png"
+bindsym $mod+Print exec --no-startup-id maim --format=png --window $(xdotool getactivewindow) "/home/$USER/downloads/screenshots/ss-$(date -u +'%Y%m%d-%H%M%SZ')-current.png" 
+bindsym Shift+Print exec --no-startup-id maim --format=png --select "/home/$USER/downloads/screenshots/ss-$(date -u +'%Y%m%d-%H%M%SZ')-selected.png"
 
 ## Screenshots in clipboards
 bindsym Ctrl+Print exec --no-startup-id maim --format=png | xclip -selection clipboard -t image/png
