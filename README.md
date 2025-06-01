@@ -5,12 +5,10 @@ configs for [arch](https://archlinux.org/) with [i3](https://i3wm.org/)
 ## tools
 
 - [bat](https://github.com/sharkdp/bat)
-- [bpytop](https://github.com/aristocratos/bpytop)
 - [gtk-3.0](https://docs.gtk.org/gtk3/)
 - [i3](https://i3wm.org/)
 - [i3status](https://i3wm.org/docs/i3status.html)
 - [kitty](https://sw.kovidgoyal.net/kitty/)
-- [mpd](https://www.musicpd.org/)
 - [nvim](https://neovim.io/)
 - [picom](https://github.com/yshui/picom)
 - [rofi](https://davatorium.github.io/rofi/)
